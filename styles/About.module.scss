@@ -1,0 +1,30 @@
+
+.About {
+    // background-color: black;
+    color: white;
+    font-family: 'Krakoan';
+    // height: 100vh;
+
+     h1 {
+        font-size: 70px;
+        padding: 40px;
+    }
+
+    &_container {
+        
+        text-align: center;
+        margin: 0 auto;
+        max-width: 800px;
+        width:100%;
+
+    }
+    &_text {
+        font-size: 32px;
+        letter-spacing: 1.5px;
+    }
+}
+
+/* .AboutContainer {
+    padding: 40px;
+} */
+
