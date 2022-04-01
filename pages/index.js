@@ -20,6 +20,12 @@ export default function Home() {
           Welcome to Krakoa
         </h1>
         <div className={styles.GateContainer}>
+          <div style={{display:'none'}}>
+          /* 
+          Krakoan Gate Graphic credit to https://twitter.com/KrakoaWelcomes
+          */
+          </div>
+
         <img src="/images/krakoan-gate-1.gif" alt="Your Name" className={styles.Gate} />
         </div>
       </main>
