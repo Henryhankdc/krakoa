@@ -11,9 +11,9 @@ function MyApp({ Component, pageProps }) {
         titleTemplate="Krakoa"
         defaultTitle="Krakoa"
         description="A Nation for the Mutant People of Earth."
-        canonical="https://krakoa.io/"
+        canonical="https://nationofkrakoa.com/"
         openGraph={{
-          url: "https://krakoa.io/",
+          url: "https://nationofkrakoa.com/",
           title: "Krakoa",
           description: "A Nation for the Mutant People of Earth.",
           images: [
