@@ -1,5 +1,6 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
@@ -8,31 +9,34 @@ export default function Home() {
         <title>Krakoa - An Island Nation</title>
         <link rel="icon" href="/favicon.ico" />
         <link
-            rel="preload"
-            href="/fonts/Krakoan/Krakoan.ttf"
-            as="font"
-            crossOrigin=""
-          />
+          rel="preload"
+          href="/fonts/Krakoan/Krakoan.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to Krakoa
-        </h1>
-        <div className={styles.GateContainer}>
-          <div style={{display:'none'}}>
-          /* 
-          Krakoan Gate Graphic credit to https://twitter.com/KrakoaWelcomes
-          */
-          </div>
+      <header className={styles.header}>
+        <h1 className={styles.title}>Welcome to Krakoa</h1>
+      </header>
 
-        <img src="/images/krakoan-gate-1.gif" alt="Your Name" className={styles.Gate} />
-        </div>
+      <main className={styles.main}>
+        <section className={styles.gateSection}>
+          <Image
+            src="/images/krakoan-gate-1.gif"
+            alt="Animated Krakoan Gate"
+            width={500} // Adjust width accordingly
+            height={500} // Adjust height accordingly
+            priority // Ensures image loads quickly
+            className={styles.gateImage}
+          />
+        </section>
       </main>
 
       <footer className={styles.footer}>
-        <h4>© 2022 Krakoa</h4>
+        <h4>© {new Date().getFullYear()} Krakoa</h4>
       </footer>
     </div>
-  )
+  );
 }
